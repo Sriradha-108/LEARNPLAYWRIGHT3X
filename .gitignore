@@ -1,0 +1,23 @@
+node_modules/
+package-lock.json.bak
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Env / secrets
+.env
+.env.*
+*.pem
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
