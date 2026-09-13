@@ -15,6 +15,12 @@
 
 // console.log(a);
 
-let a = 5; 
-let b = a-- - --a; 
-console.log(b, a);
+// let a = 5; 
+// let b = a-- - --a; 
+// console.log(b, a);
+
+var sum = 0;
+for (var i = 1; i <= 5; i++) {
+  sum += i;
+}
+console.log(sum);
