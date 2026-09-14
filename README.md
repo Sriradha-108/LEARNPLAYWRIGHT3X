@@ -11,7 +11,7 @@
 
 ## 📌 Repository Overview
 
-`LEARNPLAYWRIGHT3X` serves as a comprehensive, structured learning path and interview preparation workspace. It breaks down complex JavaScript language fundamentals, type systems, and automation concepts into modular, executable code examples paired with in-depth interview notes.
+`LEARNPLAYWRIGHT3X` serves as a comprehensive, structured learning path and interview preparation workspace. It breaks down complex JavaScript language fundamentals, type systems, functional programming, array manipulation, memory scoping, and automation concepts into modular, executable code examples paired with in-depth interview notes.
 
 ---
 
@@ -26,6 +26,10 @@ LEARNPLAYWRIGHT3X/
 ├── 05_chapter_Operator/            # Operators, Type Conversion & Interview Scenarios
 ├── 06_chapter_Statement/           # Control Flow Statements & Conditionals
 ├── 07_chapter_switch/              # Switch Cases, Grouping & API Testing Mocking
+├── 08_chapter_UserInputs/          # Handling Terminal User Input & Node.js FS
+├── 09_chapter_Loops/               # Iteration Structures (for, while, do-while, nested)
+├── 10_chapter_Arrays/              # Array Methods, Transformation, Sorting & Copying
+├── 11_chapter_Funtions/            # Functions, Arrow Syntax, Hoisting, Scope & TDZ
 ├── IQ_Notes/                       # Deep-Dive Interview Question Guides & Notes
 ├── .claude/                        # Custom Automation Commands & Helpers
 ├── package.json                    # Project Configuration & Dependencies
@@ -88,6 +92,41 @@ LEARNPLAYWRIGHT3X/
   - [`43_Switch_Group.js`](./07_chapter_switch/43_Switch_Group.js): Combining case conditions.
   - [`40_IQ.js`](./07_chapter_switch/40_IQ.js) – [`47_IQ4.js`](./07_chapter_switch/47_IQ4.js): Switch interview tricky questions.
 
+### 🔹 [08_chapter_UserInputs](./08_chapter_UserInputs)
+- **Topics**: Reading interactive CLI user input, working with `prompt-sync`, Node UI, and basic file system operations.
+- **Key Files**:
+  - [`50_Prompt.js`](./08_chapter_UserInputs/50_Prompt.js): Capturing user input using `prompt-sync`.
+  - [`51_Fs.js`](./08_chapter_UserInputs/51_Fs.js): Reading and writing input files via Node `fs` module.
+  - [`README.md`](./08_chapter_UserInputs/README.md): Chapter summary on user input modes in Node.js.
+
+### 🔹 [09_chapter_Loops](./09_chapter_Loops)
+- **Topics**: Comprehensive loop mechanics — `for`, `while`, `do-while`, nested loops, and loop control statements (`break`, `continue`).
+- **Key Files**:
+  - [`53_For_Loop.js`](./09_chapter_Loops/53_For_Loop.js) & [`56_For_Loops2.js`](./09_chapter_Loops/56_For_Loops2.js): `for` loop iteration patterns.
+  - [`57_While.js`](./09_chapter_Loops/57_While.js) & [`60_While_Vs_For.js`](./09_chapter_Loops/60_While_Vs_For.js): `while` loops vs `for` loops comparison.
+  - [`61_Do_While.js`](./09_chapter_Loops/61_Do_While.js) & [`62_DoWhile_vs_While.js`](./09_chapter_Loops/62_DoWhile_vs_While.js): `do-while` execution guarantees.
+  - [`63_NestedFor_lOOP.js`](./09_chapter_Loops/63_NestedFor_lOOP.js): Matrix iteration & nested loop algorithms.
+
+### 🔹 [10_chapter_Arrays](./10_chapter_Arrays)
+- **Topics**: Array creation, modification, iteration, transformation (`map`, `filter`, `reduce`), sorting, destructuring, and shallow vs deep copies.
+- **Key Files**:
+  - [`66_Array_Creation.js`](./10_chapter_Arrays/66_Array_Creation.js) & [`67_Array_Access_Modify.js`](./10_chapter_Arrays/67_Array_Access_Modify.js): Array initialization & mutation.
+  - [`68_Arrays_Adding_Remove.js`](./10_chapter_Arrays/68_Arrays_Adding_Remove.js): `push`, `pop`, `shift`, `unshift`, `splice`.
+  - [`70_Array_Searching.js`](./10_chapter_Arrays/70_Array_Searching.js): Search algorithms (`indexOf`, `includes`, `find`).
+  - [`72_Array_Interate.js`](./10_chapter_Arrays/72_Array_Interate.js) & [`73_Arrays_Transform.js`](./10_chapter_Arrays/73_Arrays_Transform.js): Higher-order array iteration & data transformations.
+  - [`74_Sorting.js`](./10_chapter_Arrays/74_Sorting.js) & [`75_Slicing.js`](./10_chapter_Arrays/75_Slicing.js): Sorting logic and immutability with `slice`.
+  - [`78_Copy.js`](./10_chapter_Arrays/78_Copy.js) & [`79_Destructuring.js`](./10_chapter_Arrays/79_Destructuring.js): Array memory referencing, cloning, and destructuring syntax.
+  - **Interview Challenges**: [`71_IQ.js`](./10_chapter_Arrays/71_IQ.js).
+
+### 🔹 [11_chapter_Funtions](./11_chapter_Funtions)
+- **Topics**: Function types, arrow functions, rest/spread parameters, return types, variable scoping (`var`/`let`/`const`), hoisting, and Temporal Dead Zone (TDZ).
+- **Key Files**:
+  - [`80_Type1_Basic_Fn.js`](./11_chapter_Funtions/80_Type1_Basic_Fn.js) – [`83_Type4_Basic_Fn.js`](./11_chapter_Funtions/83_Type4_Basic_Fn.js): 4 fundamental function signatures.
+  - [`85_Fn_Exp.js`](./11_chapter_Funtions/85_Fn_Exp.js) & [`86_Fn_Arrow.js`](./11_chapter_Funtions/86_Fn_Arrow.js): Function expressions & Arrow function concise body syntax.
+  - [`90_Spead_Fn.js`](./11_chapter_Funtions/90_Spead_Fn.js): Rest parameters & spread syntax in functions.
+  - [`93.Hoisting.js`](./11_chapter_Funtions/93.Hoisting.js) – [`98_TDZ.js`](./11_chapter_Funtions/98_TDZ.js) & [`102_Hoisting_TDZ.md`](./11_chapter_Funtions/102_Hoisting_TDZ.md): Execution Context, Variable/Function Hoisting & Temporal Dead Zone.
+  - **Interview Challenges**: [`99.IQ.js`](./11_chapter_Funtions/99.IQ.js), [`100_IQ.js`](./11_chapter_Funtions/100_IQ.js), [`103_IQ.js`](./11_chapter_Funtions/103_IQ.js).
+
 ---
 
 ## 🧠 Interview Question Notes (`IQ_Notes`)
@@ -98,6 +137,7 @@ The [`IQ_Notes`](./IQ_Notes) folder contains detailed conceptual breakdown docum
 |---|---|
 | 📄 [`IQ_Notes/README.md`](./IQ_Notes/README.md) | Index of all interview topic guides & note writing guidelines |
 | 📄 [`source_codeBytecode_Binary_IQ.md`](./IQ_Notes/source_codeBytecode_Binary_IQ.md) | Source Code vs Bytecode vs Binary Code (V8 Ignition, TurboFan, JVM) |
+| 📄 [`102_Hoisting_TDZ.md`](./11_chapter_Funtions/102_Hoisting_TDZ.md) | Hoisting, Execution Context & Temporal Dead Zone (TDZ) deep dive |
 
 ---
 
@@ -130,11 +170,11 @@ You can execute any individual script using Node.js directly from your command l
 # Run a specific program
 node 01_chapter_javascript/01_HelloWord.js
 
-# Run operator exercises
-node 05_chapter_Operator/18_Confusing_Comparsion.js
+# Run array transformation & sorting exercises
+node 10_chapter_Arrays/73_Arrays_Transform.js
 
-# Run API Testing simulation script
-node 07_chapter_switch/42_REAL_API_Testing.js
+# Run hoisting and TDZ conceptual scripts
+node 11_chapter_Funtions/98_TDZ.js
 ```
 
 ---
@@ -146,7 +186,7 @@ node 07_chapter_switch/42_REAL_API_Testing.js
         (Current Focus)
 ```
 
-1. 🟡 **JavaScript Foundations** *(Chapters 01–07)*: Data types, scoping, operators, equality, control flow, functions, and objects.
+1. 🟡 **JavaScript Foundations** *(Chapters 01–11)*: Data types, scoping, operators, equality, control flow, user inputs, loops, array methods, function expressions, arrow functions, and hoisting/TDZ.
 2. 🟠 **Advanced JS & Async**: Closures, prototypal inheritance, Promises, `async/await`, Event Loop.
 3. 🔵 **TypeScript Fundamentals**: Static typing, interfaces, generics, type aliases, and TS compiler configuration.
 4. 🟣 **Playwright Test Automation**: Page Object Model (POM), Locators, Actions, Assertions, Network Interception, CI/CD Integration.
