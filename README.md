@@ -11,7 +11,7 @@
 
 ## 📌 Repository Overview
 
-`LEARNPLAYWRIGHT3X` serves as a comprehensive, structured learning path and interview preparation workspace. It breaks down complex JavaScript language fundamentals, type systems, functional programming, array manipulation, memory scoping, and automation concepts into modular, executable code examples paired with in-depth interview notes.
+`LEARNPLAYWRIGHT3X` serves as a comprehensive, structured learning path and interview preparation workspace. It breaks down complex JavaScript language fundamentals, type systems, functional programming, closures, array manipulation, string methods, object memory models, and automation concepts into modular, executable code examples paired with in-depth interview notes.
 
 ---
 
@@ -30,6 +30,9 @@ LEARNPLAYWRIGHT3X/
 ├── 09_chapter_Loops/               # Iteration Structures (for, while, do-while, nested)
 ├── 10_chapter_Arrays/              # Array Methods, Transformation, Sorting & Copying
 ├── 11_chapter_Funtions/            # Functions, Arrow Syntax, Hoisting, Scope & TDZ
+├── 12_chapter_Fn_Closure/          # Function Closures, Lexical Scope & Encapsulation
+├── 13_String/                      # String Operations, Manipulations & Search Methods
+├── 14_Objects/                     # Object Literals, Pass-by-Ref vs Pass-by-Value & Configs
 ├── IQ_Notes/                       # Deep-Dive Interview Question Guides & Notes
 ├── .claude/                        # Custom Automation Commands & Helpers
 ├── package.json                    # Project Configuration & Dependencies
@@ -127,6 +130,28 @@ LEARNPLAYWRIGHT3X/
   - [`93.Hoisting.js`](./11_chapter_Funtions/93.Hoisting.js) – [`98_TDZ.js`](./11_chapter_Funtions/98_TDZ.js) & [`102_Hoisting_TDZ.md`](./11_chapter_Funtions/102_Hoisting_TDZ.md): Execution Context, Variable/Function Hoisting & Temporal Dead Zone.
   - **Interview Challenges**: [`99.IQ.js`](./11_chapter_Funtions/99.IQ.js), [`100_IQ.js`](./11_chapter_Funtions/100_IQ.js), [`103_IQ.js`](./11_chapter_Funtions/103_IQ.js).
 
+### 🔹 [12_chapter_Fn_Closure](./12_chapter_Fn_Closure)
+- **Topics**: Closures, lexical environment scope chains, inner functions retaining outer variable scopes, stateful counters, and data encapsulation.
+- **Key Files**:
+  - [`104_Scope_Fn.js`](./12_chapter_Fn_Closure/104_Scope_Fn.js): Lexical scope vs function scope.
+  - [`105_Closure.js`](./12_chapter_Fn_Closure/105_Closure.js) & [`106_Closure_Remembers.js`](./12_chapter_Fn_Closure/106_Closure_Remembers.js): Mechanics of closures and persistent variable environments.
+  - [`107_Fn_Closure_REAL.js`](./12_chapter_Fn_Closure/107_Fn_Closure_REAL.js): Practical use cases in modular code & state isolation.
+
+### 🔹 [13_String](./13_String)
+- **Topics**: String primitives vs String objects, immutability, searching, substring extraction, formatting, padding, and conversion techniques.
+- **Key Files**:
+  - [`109_String.js`](./13_String/109_String.js) & [`110_String_Fn.js`](./13_String/110_String_Fn.js): Immutability & fundamental string methods (`toUpperCase`, `trim`, `split`, `join`).
+  - [`111.Str_Searching.js`](./13_String/111.Str_Searching.js) & [`112_Extraction_String.js`](./13_String/112_Extraction_String.js): Search algorithms (`includes`, `startsWith`, `indexOf`) & slicing/substring extraction.
+  - [`113_String_More.js`](./13_String/113_String_More.js) & [`115_Fn_String_Conversion.js`](./13_String/115_Fn_String_Conversion.js): String padding (`padStart`/`padEnd`), replacements, and type conversions.
+  - [`String_Cheatsheet.md`](./13_String/String_Cheatsheet.md): Complete reference guide for JavaScript String methods.
+
+### 🔹 [14_Objects](./14_Objects)
+- **Topics**: Object literals, dynamic key access, entity modeling, environment configuration management, and primitive pass-by-value vs object pass-by-reference memory allocation.
+- **Key Files**:
+  - [`116_Objects.js`](./14_Objects/116_Objects.js) & [`117_Object_Person.js`](./14_Objects/117_Object_Person.js): Object declaration, property access, and modeling real-world entities.
+  - [`120_Config.js`](./14_Objects/120_Config.js): Structuring environment configuration objects for test automation.
+  - [`121_CallBy_Ref_CallByValue.js`](./14_Objects/121_CallBy_Ref_CallByValue.js): Deep dive into memory reference vs primitive value assignment.
+
 ---
 
 ## 🧠 Interview Question Notes (`IQ_Notes`)
@@ -138,6 +163,7 @@ The [`IQ_Notes`](./IQ_Notes) folder contains detailed conceptual breakdown docum
 | 📄 [`IQ_Notes/README.md`](./IQ_Notes/README.md) | Index of all interview topic guides & note writing guidelines |
 | 📄 [`source_codeBytecode_Binary_IQ.md`](./IQ_Notes/source_codeBytecode_Binary_IQ.md) | Source Code vs Bytecode vs Binary Code (V8 Ignition, TurboFan, JVM) |
 | 📄 [`102_Hoisting_TDZ.md`](./11_chapter_Funtions/102_Hoisting_TDZ.md) | Hoisting, Execution Context & Temporal Dead Zone (TDZ) deep dive |
+| 📄 [`String_Cheatsheet.md`](./13_String/String_Cheatsheet.md) | JavaScript String methods reference & usage guide |
 
 ---
 
@@ -170,11 +196,14 @@ You can execute any individual script using Node.js directly from your command l
 # Run a specific program
 node 01_chapter_javascript/01_HelloWord.js
 
-# Run array transformation & sorting exercises
-node 10_chapter_Arrays/73_Arrays_Transform.js
+# Run closure exercises
+node 12_chapter_Fn_Closure/105_Closure.js
 
-# Run hoisting and TDZ conceptual scripts
-node 11_chapter_Funtions/98_TDZ.js
+# Run string search & manipulation script
+node 13_String/111.Str_Searching.js
+
+# Run object pass-by-reference demonstration
+node 14_Objects/121_CallBy_Ref_CallByValue.js
 ```
 
 ---
@@ -186,7 +215,7 @@ node 11_chapter_Funtions/98_TDZ.js
         (Current Focus)
 ```
 
-1. 🟡 **JavaScript Foundations** *(Chapters 01–11)*: Data types, scoping, operators, equality, control flow, user inputs, loops, array methods, function expressions, arrow functions, and hoisting/TDZ.
+1. 🟡 **JavaScript Foundations** *(Chapters 01–14)*: Data types, scoping, operators, equality, control flow, user inputs, loops, array methods, functions, hoisting/TDZ, closures, string manipulations, and object memory models.
 2. 🟠 **Advanced JS & Async**: Closures, prototypal inheritance, Promises, `async/await`, Event Loop.
 3. 🔵 **TypeScript Fundamentals**: Static typing, interfaces, generics, type aliases, and TS compiler configuration.
 4. 🟣 **Playwright Test Automation**: Page Object Model (POM), Locators, Actions, Assertions, Network Interception, CI/CD Integration.
